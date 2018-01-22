@@ -2,18 +2,26 @@
 
 ### Assignment Set for HTML and CSS
 
-1. Create an HTML  with 3 div of the same width in a line. Provide colors: red, green and blue to all three division.
+1. Create an HTML  with 3 div. Provide colors: red, green and blue to all three division. Provide some height so that DIVs are visible
 
 2. Make an HTML form with Name, password, email, mobile number, country selection, gender selection, suggestion ( textarea ) and submit button. Put submit button labeled as "Sign Up".
 
 3. Create a Video section with any dummy video. 
+
 4. Create an audio section with any audio you have.
+
 5. Create an HTML with a Background image and text over the Image - Text should be center aligned. Like a quote with a background.
+
 6. Create a HTML with a image - Image should fit into 200px X 200px area. And this image should be aligned to the center of the page horizontally.
+
 7. Create 2 CSS classes - one to created rounded corners of images and other to center align the image. Please use both classes to achieve above mentioned task in point 6.
-8. Please use bootstrap to create 4 equal DIVs with background - RED, GREEN, BLUE and YELLOW
+
+8. Please use bootstrap to create 4 equal DIVs with background css classes - red, green, blue and yellow. These classes will provide the same background-color as the name suggests and provide visible font-color in all divs.
+
 9. Use animate.css Library to create an animated Image with shaky shaky effect whenever loaded.
+
 10. Create Round button using CSS.
+
 11. Create responsive site which has 6 divs in a line in big display and only 2 products in a line in 2
 
 
