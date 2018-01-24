@@ -1,0 +1,11 @@
+.styleBold{
+    background: blue;
+    font-weight: bold;
+    color:white;
+}
+
+#style2{
+    background: red;
+    font-weight: bold;
+    color:white;
+}
