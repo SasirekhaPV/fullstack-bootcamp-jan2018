@@ -1,7 +1,7 @@
 ### Assignment Set for JS
 
 
-1. It is found by comparing two DNA strands and counting how many of the nucleotides are different from their equivalent in the other string.Find out the difference in 2 strings. How many chars are different ?
+1. ** It is found by comparing two DNA strands and counting how many of the nucleotides are different from their equivalent in the other string.Find out the difference in 2 strings. How many chars are different ?
 
 	```
 	GAGCCTACTAACGGGAT
@@ -54,4 +54,26 @@
     
     
 7. 	Create a Simple HTML Page with 1 button and add a new paragraph on every button click. You will need to use "innerHTML" property of a HTML element for this.
+
+8. ** Create a JSON data object for Facebook news feed, should have data for author name, author image, post content, list of likes,comments and share etc. Now you must be able to query these  :
+
+      a. Check how many posts are by a particular user in your feed ?
+      b. How many likes on 5th post ?
+      c. Who are the users who liked 5th post ?
+      d. Who is the First user to like 5th post ?
+      e. How many users are there who have both commented and liked 5th post. Also show list of those users.
+      f. Find out the person who has commented most on your feed. (In top 10 posts)
+
+
+9. Create a JS object representing your facebook friendlist.
+      a. Delete friends who have fake as first name. ( e.g fake singh)
+      b. Add 2 more friends to your friendlist at a time.
+      c. print all friends in your friendlist sorted by Name.
+      d. print all friends in your friendlist sorted by Length of Name( # of chars)
+      e. print initials of all your friends (Virat Kohli becomes VK)
+      f. print only friends who have same first names
+
+
+
+
 
