@@ -12,7 +12,7 @@ function addItem(){
 function dataToList(){
     $("#itemlist").html("")
     for(var i=0;i<list.length;i++){
-         $("#itemlist").append("<li  onclick='selectItem("+i+")' class='list-group-item '>"+list[i].label+"<button onclick='selectItem("+i+")'>del</button></li>")
+         $("#itemlist").append("<li onclick='checkItem("+i+")' class='"+(list[i].status?'list-group-item list-group-item-success':'list-group-item ')+"' >"+list[i].label+"<button onclick='selectItem("+i+")'>del</button></li>")
         
         }
 }
@@ -25,6 +25,6 @@ dataToList()
 
 function checkItem(index){
     console.log("selected")
-    list[i].status = true;
+    list[index].status = true;
     dataToList()
 }
