@@ -20,7 +20,7 @@
 
 10. Create Round button using CSS.
 
-11. Create responsive site which has 6 divs in a line in big display and only 2 products in a line in 2
+11. Create responsive site which has 6 divs in a line in large display and only 2 products in a line in small screen display.
 
 12. ** Create chat bubble styled div for which should align to left side of screen. Also make similar chat bubble to align to right side of screen. Please take care that bubbles should not be in same line.
 

@@ -48,30 +48,30 @@
     
 6. Implement a clock that handles times without dates.
 
-	Create a clock that is independent of date.
-	You should be able to add and subtract minutes to it.
-	Two clocks that represent the same time should be equal to each other.
+	Create a clock that is independent of date.<br>
+	You should be able to add and subtract minutes to it.<br>
+	Two clocks that represent the same time should be equal to each other.<br>
     
     
 7. 	Create a Simple HTML Page with 1 button and add a new paragraph on every button click. You will need to use "innerHTML" property of a HTML element for this.
 
 8. ** Create a JSON data object for Facebook news feed, should have data for author name, author image, post content, list of likes,comments and share etc. Now you must be able to query these  :
 
-      a. Check how many posts are by a particular user in your feed ?
-      b. How many likes on 5th post ?
-      c. Who are the users who liked 5th post ?
-      d. Who is the First user to like 5th post ?
-      e. How many users are there who have both commented and liked 5th post. Also show list of those users.
-      f. Find out the person who has commented most on your feed. (In top 10 posts)
+      a. Check how many posts are by a particular user in your feed ? <br>
+      b. How many likes on 5th post ?<br>
+      c. Who are the users who liked 5th post ?<br>
+      d. Who is the First user to like 5th post ?<br>
+      e. How many users are there who have both commented and liked 5th post. Also show list of those users.<br>
+      f. Find out the person who has commented most on your feed. (In top 10 posts)<br>
 
 
 9. Create a JS object representing your facebook friendlist.
-      a. Delete friends who have fake as first name. ( e.g fake singh)
-      b. Add 2 more friends to your friendlist at a time.
-      c. print all friends in your friendlist sorted by Name.
-      d. print all friends in your friendlist sorted by Length of Name( # of chars)
-      e. print initials of all your friends (Virat Kohli becomes VK)
-      f. print only friends who have same first names
+      a. Delete friends who have fake as first name. ( e.g fake singh)<br>
+      b. Add 2 more friends to your friendlist at a time.<br>
+      c. print all friends in your friendlist sorted by Name.<br>
+      d. print all friends in your friendlist sorted by Length of Name( # of chars)<br>
+      e. print initials of all your friends (Virat Kohli becomes VK)<br>
+      f. print only friends who have same first names<br>
 
 
 
