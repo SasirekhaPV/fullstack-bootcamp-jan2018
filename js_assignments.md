@@ -66,6 +66,7 @@
 
 
 9. Create a JS object representing your facebook friendlist.
+
       a. Delete friends who have fake as first name. ( e.g fake singh)<br>
       b. Add 2 more friends to your friendlist at a time.<br>
       c. print all friends in your friendlist sorted by Name.<br>
