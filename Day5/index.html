@@ -22,11 +22,13 @@
                 <button ng-click="second.addTask()">Add</button>
                 <button ng-click="second.popTask()">pop</button>
 
-                <ul>
-                   <li ng-class="{'done':task.status}" ng-click="second.checkTask($index)" ng-repeat="task in second.tasks">{{task.name}}
-                       <button ng-click=second.delTask($index)>X</button>
+                <input type="text" ng-model="search">
+                <ol>
+                   <li ng-class="{'done':task.status}" ng-click="second.checkTask(task.id)"
+                    ng-repeat="task in second.tasks| filter:{name:search} | orderBy:'name':'desc'">{{task.name}} {{task.time | date:"dd MMM" }}
+                       <button ng-click=second.delTask(task.id)>X</button>
                    </li> 
-                </ul>
+                </ol>
 
          </div>
 
