@@ -18,16 +18,20 @@ function firstCtrl(){
 
 function secondCtrl(){
     var second = this;
-    second.tasks = []
+   // console.log(JSON.parse(localStorage.getItem("tasks")))
+    second.tasks = JSON.parse(localStorage.getItem("tasks")) || []
 
     second.addTask = function(){
-            var obj = {id:second.tasks.length,name:second.name,status:false,time:new Date()}
+         var d = new Date()
+            var obj = {id:d.getTime(),name:second.name,status:false,time:new Date()}
             second.tasks.push(obj)
+            saveList()
             console.log(second.tasks)
             second.name = ""
     }
     second.popTask = function(){
         second.tasks.pop()
+        saveList()
         console.log(second.tasks)
 }
 
@@ -35,11 +39,13 @@ second.delTask = function(id){
    
   
     second.tasks.splice(fetchIndex(id),1)
+    saveList()
     console.log(second.tasks)
 }
 
 second.checkTask = function(id){
     second.tasks[fetchIndex(id)].status = !second.tasks[fetchIndex(id)].status
+    saveList()
 }
 
 
@@ -52,6 +58,11 @@ function fetchIndex(id){
         }
        }
        return index
+}
+
+function saveList(){
+    localStorage.setItem("tasks",JSON.stringify(second.tasks));
+
 }
 
     
