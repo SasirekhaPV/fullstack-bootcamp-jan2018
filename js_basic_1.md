@@ -2,18 +2,26 @@
 * Write a JavaScript program to display the current day and time in the following format. 
     Sample Output : Today is : Friday. 
     Current time is : 4 PM : 50 : 22
+    
 * Write a JavaScript program to get the current date. 
- Expected Output : 
- mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy 
+ ```
+ 	Expected Output : 
+ 	mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy 
+ ```
 * Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. 
+
 * Write a JavaScript program to rotate the string 'w3resource' in right direction by periodically removing one letter from the end of the string and attaching it to the front. 
+ 
 * Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched". 
+
 * Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit. 
- [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ] 
+``` [ Formula : c/5 = (f-32)/9 [ where c = temperature in Celsius and f = temperature in Fahrenheit ] 
  Expected Output : 
  60°C is 140 °F
- 45°F is 7.222222222222222°C 
+ 45°F is 7.222222222222222°C
+ ```
 * Write a JavaScript program to get the current website URL (loading page). 
+
 * Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum. 
 * Write a JavaScript program to compute the absolute difference between a specified number and 19. 
 * Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50. 
