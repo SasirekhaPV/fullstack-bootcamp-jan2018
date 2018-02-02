@@ -1,0 +1,19 @@
+<html  ng-app="demoApp">
+    <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+     
+    </head>
+    <body>
+
+        <div ng-controller="firstCtrl as first">
+            <input type="text" ng-model="first.name">
+            <button ng-click="first.search(first.name)">search</button>
+            <br>
+            <img src="img/{{first.pic}}" alt="">
+
+         </div>
+
+        
+    </body>
+</html>
