@@ -1,0 +1,36 @@
+<html  ng-app="demoApp">
+    <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+       
+        <style>
+            .ng-scope{
+                border:1px solid red;
+            }
+        
+        
+        </style>
+    </head>
+    <body>
+
+            <div ng-controller="secondCtrl as second" >
+                    <input type="text" ng-model="second.user.name">   
+       
+                   {{second.user.name}}
+            </div>
+
+            <span ng-controller="firstCtrl as first">
+                <input type="text" ng-model="first.user.name">   
+                {{first.user.name}}
+            </span>
+    
+       
+
+     
+   
+
+      
+        
+        
+    </body>
+</html>
