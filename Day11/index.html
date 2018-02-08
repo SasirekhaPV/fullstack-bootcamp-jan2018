@@ -1,0 +1,29 @@
+<html ng-app="game">
+    <head>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.css">
+        <style>
+            .flag-icon{
+                width: 5em;
+                line-height: 3em;
+
+            }
+        
+        </style>
+    </head>
+    <body>
+
+        <div ng-controller="gameCtrl as game">
+
+            <span class="flag-icon flag-icon-{{game.iso}}"></span>
+            <input type="text" ng-model="game.country">
+            <button ng-click="game.check()">Check</button>
+            <h1 ng-if="game.country==game.name">Correct</h1>
+            <h1 ng-if="game.country!=game.name">Incorrect</h1>
+
+
+        </div>
+        
+    </body>
+</html>

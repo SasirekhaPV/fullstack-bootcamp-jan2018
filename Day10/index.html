@@ -1,0 +1,18 @@
+<html ng-app="chatApp">
+    <head>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="app.js"></script>
+        <script src="services/data.js"></script>
+        <script src="controllers/demoCtrl.js"></script>
+        
+
+    </head>
+    <body>
+        <div ng-controller="demoCtrl as demo">
+                <input type="text" ng-model="name">
+                {{name}}
+        </div>
+      
+    </body>
+</html>
