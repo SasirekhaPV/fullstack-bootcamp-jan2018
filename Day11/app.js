@@ -5,16 +5,40 @@ angular.module("game",[])
     function gameCtrl(countries){
         var game = this;
         console.log("game")
-        var r = Math.floor(Math.random()*countries.length)
-        game.iso = countries[r]['alpha-2']
-        game.name = countries[r].name
+        var right;
+ 
+        game.next = function(){
+                game.disabled = false;
+                game.correct = false
+                game.options = []
+
+                
+                for(var i=0;i<4;i++){
+                var r =  Math.floor(Math.random()*countries.length)
+                game.options.push(r);
+                }
+                console.log(game.options)
+
+                right =  Math.floor(Math.random()*game.options.length)
+                console.log(right)
+
+                var r = game.options[right]
+            
+                game.iso = countries[r]['alpha-2']
+                game.name = countries[r].name
+
+                game.countries = countries;
+       }
+
+       game.next();
+      
 
 
-
-       game.check = function (){
-         if(game.country==game.name){
-             
-         }
+       game.check = function (index){
+           game.disabled = true
+        if(index==right){
+            game.correct = true
+        }
         }
 
 
