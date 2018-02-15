@@ -7,7 +7,7 @@
 2. In Previous application use parameterized routing to change categories.
     * On click of a category pass the catgeory as route Params.
     * Use same controller to load different product data for each of categories.
-3. In Previous application ise parameterized routing to open detailed product page.
+3. In Previous application use parameterized routing to open detailed product page.
     * On click of a product open prouct page.
     * Product controller should be a separate controller.,
     * Create a button to add product to the Cart.

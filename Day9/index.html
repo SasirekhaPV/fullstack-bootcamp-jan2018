@@ -69,17 +69,23 @@
         <div class="col-lg-9">
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <a href="" ng-click="product.changeSort('-price')">Price High to Low</a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <a href="" ng-click="product.changeSort('price')">Price Low to High</a>
               </div>
+            <div class="col-md-4">
+                <a href="" ng-click="product.search=4">Higher than 4+</a>
+            </div>
           </div>
 
+          <!-- <div class="row">
+            <input type="text" ng-model="search">
+          </div> -->
+        
           <div class="row">
-
-            <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in product.items | orderBy:product.sorttype">
+            <div class="col-lg-4 col-md-6 mb-4" ng-repeat="item in product.items|filter:product.search: product.rating| orderBy:product.sorttype">
               <div class="card h-100">
                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                 <div class="card-body">

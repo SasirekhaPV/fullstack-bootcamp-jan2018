@@ -13,6 +13,11 @@ function productCtrl(products){
       product.sorttype = type
   }
 
+  product.rating = function(actual,input){
+    console.log(actual.rating,input)
+      return actual.rating>=parseInt(input)
+  }
+
 }
 
 
