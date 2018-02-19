@@ -4,8 +4,8 @@
 2. [JS Assignments](./js_assignments.md)
 3. [JS Basics -1 ](./js_basic_1.md)
 4. [AngularJS Assignment -1 ](./angularjs_assignment.md)
-4. [AngularJS Routes Assignment ](./angularjs_routes.md)
-
+5. [AngularJS Routes Assignment ](./angularjs_routes.md)
+6. [Angular API Assignment ](./angular-api.md)
 
 
 
