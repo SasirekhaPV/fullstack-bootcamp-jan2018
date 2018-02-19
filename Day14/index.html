@@ -1,0 +1,30 @@
+<html ng-app="api">
+    <head>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="app.js"></script>
+        <style>
+        .thumb{
+            width:200px;
+            
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div ng-controller="testCtrl as test">
+
+            <input type="text" ng-model="test.name">
+            <button ng-click="test.search()">check</button>
+
+
+            <div ng-repeat = "char in test.chars">
+                <h1>{{char.name}}</h1>
+                <h3>{{char.description}}</h3>
+                <img class="thumb" src="{{char.thumbnail.path}}.{{char.thumbnail.extension}}" alt="">
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
