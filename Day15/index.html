@@ -1,0 +1,30 @@
+<html ng-app="api">
+    <head>
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="app.js"></script>
+        <style>
+        .thumb{
+            width:200px;
+            
+        }
+        </style>
+    </head>
+    <body>
+        
+        <div ng-controller="testCtrl as test">
+
+          
+
+            <select name="" id="" ng-model="test.selected" 
+            ng-options="u.name.first group by u.gender disable when u.gender=='male' for u in test.users"></select>
+
+            <div>
+                   
+                <img ng-src="{{test.selected.picture.thumbnail}}" alt="">
+
+            </div>
+            
+        </div>
+
+    </body>
+</html>
