@@ -1,0 +1,31 @@
+<html  ng-app="demoApp">
+    <head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+       
+        <style>
+            .ng-scope{
+                border:1px solid red;
+            }
+        
+        
+        </style>
+    </head>
+    <body>
+
+
+            <span ng-controller="firstCtrl as first">
+                <input type="text" ng-model="first.user.name">   
+                {{first.user.name}}
+            </span>
+    
+       
+
+     
+   
+
+      
+        
+        
+    </body>
+</html>
