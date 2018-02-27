@@ -3,9 +3,14 @@ angular.module("eKart",['ngRoute'])
         .controller('productCtrl',productCtrl)
         .controller('aboutCtrl',aboutCtrl)
         .controller('detailCtrl',detailCtrl)
+        .controller('cartCtrl',cartCtrl)
+        .controller('navCtrl',navCtrl)
         .factory('products',products)
+        .factory('kart',kart)
 
 
+
+        
 function config($routeProvider){
 
     $routeProvider
@@ -29,21 +34,54 @@ function config($routeProvider){
         controller:'aboutCtrl',
         controllerAs:'about'
     })
-    .otherwise({redirectTo:"/category/0"})
+    .when("/cart",{
+        templateUrl:'partials/cart.html',
+        controller:'cartCtrl',
+        controllerAs:'cart'
+    })
+    .otherwise({redirectTo:"/category/shoes"})
 
 
 }
 
+function navCtrl(kart){
+    var nav = this;
+    nav.total = kart;
+}
+
+function cartCtrl(kart){
+ var cart = this;
+
+ cart.items = kart;
+
+
+ cart.total = function(){
+
+    var sum =0;
+    for(var i=0;i<kart.length;i++){
+        sum = sum + kart[i].price*kart[i].qty;
+    }
+    cart.grandTotal = sum
+ }
+  cart.total()
+
+}
 
 function aboutCtrl(products){
     console.log("about",products)
 }
 
 function detailCtrl(products,$routeParams){
-
     console.log($routeParams)
     var detail = this;
-    var category = products[parseInt($routeParams.category)]
+
+    var index;
+    for(var i=0;i<products.length;i++){
+        if($routeParams.category == products[i].name){
+             index =i;
+        }
+    }
+    var category = products[index]
     console.log(category)
 
     for(var i=0;i<category.products.length;i++){
@@ -53,14 +91,22 @@ function detailCtrl(products,$routeParams){
     }
 }
 
-function productCtrl(products,$routeParams){
+function productCtrl(products,$routeParams,kart){
    var product = this;
 
    console.log($routeParams.category)
 
    product.category = $routeParams.category;
    product.list = products;
-   product.items = products[parseInt($routeParams.category)].products;
+   var index;
+   for(var i=0;i<products.length;i++){
+       if($routeParams.category == products[i].name){
+            index =i;
+       }
+   }
+
+
+   product.items = products[index].products;
     console.log(products)
 
   product.changeSort = function(type){
@@ -72,14 +118,17 @@ function productCtrl(products,$routeParams){
       return actual.rating>=parseInt(input)
   }
 
+  product.add = function(item){
+      console.log(item);
+      kart.push({name:item.name,qty:"1",price:item.price})
+  }
+
+
+
 }
 
 
-function products($http){
-
-    $http.get("http://localhost:7000/products",function(results){
-        console.log(results.data);
-    })
+function products(){
 
     return [
         {name:"shoes",
@@ -104,5 +153,13 @@ function products($http){
             {name:"Inferno Rockers",brand:"Woodland",price:40.00,desc:"xyz",rating:1,image:"demo.png"}
         ]},
 
+    ]
+}
+
+
+function kart()
+{
+    return [
+        
     ]
 }

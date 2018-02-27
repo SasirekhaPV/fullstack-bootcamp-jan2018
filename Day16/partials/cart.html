@@ -1,0 +1,23 @@
+<div ng-repeat="item in cart.items">
+
+    <span>
+        {{item.name}}
+    </span>
+    <span>
+        {{item.price}}
+    </span>
+    <select name="" id="" ng-model="item.qty" ng-change=cart.total()>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+    <span>
+            {{item.qty * item.price}}
+        </span>
+
+      
+
+</div>
+<div>
+        Total : {{cart.grandTotal}}
+ </div>
