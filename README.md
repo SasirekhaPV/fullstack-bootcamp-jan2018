@@ -7,8 +7,4 @@
 5. [AngularJS Routes Assignment ](./angularjs_routes.md)
 6. [Angular API Assignment ](./angular-api.md)
 7. [Node/Express Assignment ](./node-js.md)
-
-
-    
- 
- 
+8. [Angular Assignment -2 ](./angularjs_assignment-2.md)
