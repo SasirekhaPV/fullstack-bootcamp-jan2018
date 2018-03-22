@@ -9,7 +9,7 @@
 7. [Node/Express Assignment ](./node-js.md)
 8. [Angular Assignment -2 ](./angularjs_assignment-2.md)
 9. [Node MongoDB Assignment](./node_mongodb_assignment.md)
-10.[Firebase Assignment](./firebase_assignment.md)
+10. [Firebase Assignment](./firebase_assignment.md)
 #Setups
 
 1. Node/NPM
