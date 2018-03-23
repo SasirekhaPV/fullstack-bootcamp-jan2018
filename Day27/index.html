@@ -1,0 +1,34 @@
+<html  ng-app="demoApp">
+    <head>
+        <script src="node_modules/angular/angular.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD5u5hZ463-Ylaqbx4Ebbp1eCyOK-8BwhQ",
+    authDomain: "dummytasklist-f7c2b.firebaseapp.com",
+    databaseURL: "https://dummytasklist-f7c2b.firebaseio.com",
+    projectId: "dummytasklist-f7c2b",
+    storageBucket: "dummytasklist-f7c2b.appspot.com",
+    messagingSenderId: "241713255181"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="node_modules/angularfire/dist/angularfire.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>
+
+
+         <div ng-controller="secondCtrl as second">
+
+          <input id="file" type="file">
+          <button ng-click="second.upload()">Upload</button>
+          
+
+         </div>
+
+        
+    </body>
+</html>
