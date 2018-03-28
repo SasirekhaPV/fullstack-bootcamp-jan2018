@@ -14,7 +14,6 @@ function secondCtrl($firebaseStorage){
        var file=  document.getElementById("file").files[0];
        console.log(file)
 
-
         var uploadTask = second.storage.$put(file);
         uploadTask.$complete(function(snapshot) {
             console.log(snapshot.downloadURL);
